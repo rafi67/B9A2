@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+/* default style */
+* {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    line-height: normal;
+}
+
+p, li {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.span {
+    color: rgb(255, 84, 0);
+}
+
+/* Navbar */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+
+.logo img {
+    width: 48px;
+    height: 56px;
+    margin-right: 0.5rem;
+}
+
+.nav-options {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-options p {
+    cursor: pointer;
+}
+
+/* Banner */
+.travel-inputs button img {
+    width: 20px;
+    height: 20px;
+}
+
+.explore-your-travel {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    padding: 7rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-container h3 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.explore-container p {
+    color: rgb(209, 212, 214);
+    font-size: 18px;
+    line-height: 26px;
+    width: 676px;
+    padding: 1.5rem 0;
+    margin: auto;
+}
+
+.travel-inputs {
+    margin-top: 2rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.travel-inputs input, select {
+    width: 175px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(255, 84, 0);
+    color: white;
+    border: 1px solid  rgb(255, 84, 0);
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+/* Popular Section */
+.popular-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.popular-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.text-content p, .text-content li {
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.text-content p, 
+.text-content li,
+.text-content h3 {
+    text-align: left;
+}
+
+/* Your Destination */
+.your-destination img {
+    width: 100%;
+    height: 300px;
+    filter: brightness(85%);
+}
+
+.your-destination h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+}
+
+.your-destination p {
+    width: 60%;
+    color: rgba(19, 19, 24, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.row-1, 
+.row-2, 
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.row-2 {
+    grid-template-columns: .8fr 1.5fr .7fr;
+}
+
+.row-3 {
+    grid-template-columns: .75fr 1.25fr;
+}
+
+.country-card {
+    position: relative;
+}
+
+.your-destination .country-card .country {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+/* why chose us */
+.choose-us .row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.choose-us .row-2 .card-1 {
+    grid-area: card-1;
+}
+
+.choose-us .row-2 {
+    display: grid;
+    grid-template-areas: '. card-1 . .';
+}
+
+.choose-us > p {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.7);
+}
+
+.choose-us .row-1 .card-1, .card-2, .row-2 .card-1 {
+    background-color: rgba(251, 181, 99, 0.05);
+    padding: 32px 55px 32px 32px;
+    border:  1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+}
+
+.choose-us .row-1 .card-2 {
+    background-color: rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.2);
+}
+
+.choose-us .row-1 .card-1 img, .card-2 img, .row-2 .card-1 img {
+    width: 64px;
+}
+
+.choose-us .row-1 .card-1 h4, .card-2 h4 , .row-2 .card-1 h4{
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: rgb(19, 19, 24);
+    text-align: left;
+}
+
+.choose-us .row-1 .card-1 p, .choose-us .card-2 p, .choose-us .row-2 p {
+    color: rgb(90, 90, 93);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* deals and discounts */
+
+.deals-and-discounts {
+    text-align: center;
+}
+
+.deals-and-discounts h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+}
+
+.deals-and-discounts > p {
+    width: 45%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.7);
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.deals-and-discounts .card-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.deals-and-discounts .card-container .card {
+    width: 49%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    transform: translate(-7.5%, 0%);
+    padding: 50px 50px 50px 50px;
+    border: 2px solid white;
+    text-align: left;
+}
+
+.card .icon-container div {
+    display: flex;
+    column-gap: 10px;
+}
+
+.card .icon-container div img {
+    width: 19.5px;
+    height: 19.5px;
+}
+
+.card .icon-container div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(90, 90, 93);
+}
+
+.icon-container {
+    display: flex;
+    column-gap: 26px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.card .card-description {
+    width: 60%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(90, 90, 93);
+}
+
+.card #price {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 84, 0);
+    margin: 16px 0 24px 0;
+}
+
+.card button {
+    width: 150px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(255, 84, 0);
+    border-radius: 8px;
+    border: 1px solid rgb(255, 84, 0);
+    cursor: pointer;
+}
+
+#middle-card-container {
+    margin: 24px 0;
+    justify-content: flex-start;
+}
+
+#middle-card-container .card {
+    transform: translateX(7.5%);
+}
+
+.card button {
+    font-family: 'Mulish';
+}
+
+.deals-btn {
+    width: 210px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Mulish';
+    border: none;
+    background-color: rgb(255, 84, 0);
+    margin-top: 48px;
+}
+
+/* perfect place */
+.perfect-place {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+}
+
+.perfect-place-content {
+    width: 100%;
+}
+
+.perfect-place-content h3 {
+    width: 84%;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+    text-align: left;
+}
+
+.perfect-place-content p {
+    margin: 24px 0 24px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(90, 90, 93);
+}
+
+.perfect-place-content ul li {
+    color: rgb(19, 19, 24);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.perfect-place-content ul > li {
+    margin-bottom: 16px;
+}
+
+.perfect-place-content ul {
+    margin-bottom: 32px;
+}
+
+.perfect-place-content button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 84, 0);
+    font-family: 'Mulish';
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.perfect-place-video {
+    width: 100%;
+    position: relative;
+}
+
+.perfect-place-video video {
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgb(19, 19, 24) -31.958%,rgba(19, 19, 24, 0) 100%);
+}
+
+.perfect-place-video p {
+    position: absolute;
+    width: 45%;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* newsletter */
+.newsletter {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    column-gap: 24px;
+}
+
+.newsletter-form h3 {
+    width: 28%;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.newsletter-form {
+    border-radius: 8px;
+    border: 2px solid rgb(255, 84, 0);
+    padding: 40px;
+}
+
+.newsletter-form p {
+    width: 74%;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(90, 90, 93);
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.newsletter-form form {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form form input {
+    width: calc(100% - 15px);
+    height: 52px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    padding: 0;
+    border: none;
+    padding: 0 0.5rem;
+}
+
+.newsletter-form form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(19, 19, 24, 0.3);
+}
+
+.newsletter-form form input[type=text] {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.newsletter-form form input[type=email] {
+    margin-bottom: 24px;
+}
+
+.newsletter-form form button {
+    width: 100%;
+    height: 52px;
+    background-color: rgb(255, 84, 0);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Mulish';
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 149px 13px 148px;
+}
+
+.newsletter-container {
+    background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    position: relative;
+}
+
+.newsletter-content {
+    width: 324px;
+    height: 120px;
+    background-color: rgb(255, 84, 0);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 58%;
+    transform: rotate(-19deg);
+}
+
+.newsletter-content p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.newsletter-content h4 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+ 
+/* footer */
+
+.footer-section {
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 2rem 0;
+}
+
+.footer-section .logo {
+    margin: 2rem auto;
+}
+
+.social {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    column-gap: 30px;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+}
+
+.footer-section hr {
+    margin: 2rem 0;
+}
+
+.menu {
+    display: none;
+}
+
+/* responsive design */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: block;
+    }
+
+    .menu img {
+        width: 30px;
+    }
+
+    .nav-options {
+        display: none;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .menu img {
+        font-size: 26px;
+    }
+
+    .container {
+        margin: 3rem auto;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .explore-container h3 {
+        font-size: 26px;
+    }
+
+    .explore-container p {
+        width: 60%;
+    }
+
+    .travel-inputs {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    .travel-inputs input,
+    .travel-inputs select,
+    .travel-inputs button {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .popular-section, .row-1, .row-2, .row-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-us h4 {
+        font-size: 20px;
+    }
+
+    .choose-us > p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .choose-us .row-1, .row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-us .row-1 img, .choose-us .row-2 img {
+        width: 42px;
+    }
+
+    .choose-us .row-1 .card-1 h4, .card-2 h4, .row-2 .card-1 h4 {
+        margin: 16px 0;
+        font-size: 20px;
+    }
+
+    .choose-us .row-1 .card-1 p, .card-2 p, .row-2 .card-1 p {
+        font-size: 14px;
+    }
+
+    .choose-us .row-1 .card-1, .card-2, .row-2 .card-1 {
+        padding: 32px;
+    }
+
+    .deals-and-discounts h3 {
+        font-size: 20px;
+    }
+
+    .deals-and-discounts > p {
+        width: 100%;
+        font-size: 14px;
+        margin: 16px auto;
+    }
+
+    .deals-and-discounts .card-container {
+        justify-content: center;
+    }
+
+    #middle-card-container {
+        justify-content: center;
+    }
+
+    #middle-card-container .card {
+        transform: translate(0%, 15%);
+    }
+
+    #middle-card {
+        transform: translate(0%, 15%);
+    }
+
+    .deals-and-discounts .card-container .card {
+        width: 70%;
+        transform: translate(0%, 15%);
+        padding: 24px;
+    }
+
+    .deals-and-discounts .card-container .card .icon-container .icon-1 {
+        grid-area: icon-1;
+    }
+
+    .deals-and-discounts .card-container .card .icon-container .icon-2 {
+        grid-area: icon-2;
+    }
+
+    .deals-and-discounts .card-container .card .icon-container .icon-3 {
+        grid-area: icon-3;
+    }
+
+    .deals-and-discounts .card-container .card .icon-container {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "icon-1 icon-1 icon-1 icon-1"
+        "icon-2 icon-2 icon-3 icon-3";
+        gap: 10px;
+    }
+
+   
+
+    .card-container .card .card-description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .perfect-place {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+
+    .perfect-place-content h3, .perfect-place-video p {
+        font-size: 20px;
+    }
+
+    .perfect-place-content p, .perfect-place-content ul li {
+        font-size: 14px;
+    }
+
+    .perfect-place-video p {
+        width: 90%;
+    }
+
+    .newsletter {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+
+    .newsletter-form {
+        width: 85%;
+        padding: 24px;
+    }
+
+    .newsletter-form form {
+        width: 100%;
+    }
+
+    .newsletter-form form input {
+        width: 94%;
+    }
+
+    .newsletter-form form button {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+     .newsletter-container {
+        height: 300px;
+     }
+
+    .newsletter-content {
+        width: 214px;
+        height: 79px;
+        top: 63%;
+        left: 37%;
+    }
+
+    .newsletter-content p {
+        font-size: 16px;
+    }
+
+    .newsletter-content h4 {
+        font-size: 21px;
+    }
+    
+}
